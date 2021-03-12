@@ -7,11 +7,11 @@ export default function Login({closeMenu}) {
     function showRegister(){
         document.querySelector('.login-box').classList.add('hidden')
         document.querySelector('.register-box').classList.remove('hidden')
-    }  
+    }
     function showLogin(){
         document.querySelector('.login-box').classList.remove('hidden')
         document.querySelector('.register-box').classList.add('hidden')
-    }  
+    }
     function closeLoginOverlay(){
         document.querySelector('.login-overlay').classList.add('hidden')
     }
@@ -29,7 +29,7 @@ export default function Login({closeMenu}) {
         </div>
         <div className="login-container">
             <div className="login-box box">
-                <form className="login-form">                    
+                <form className="login-form">
                     <h3 className="no-display-small login-box-header">Great to have you back!</h3>
                     <div className="input-group-login">
                         <input type="email" id="email" placeholder="Email Address" />

@@ -15,8 +15,8 @@ export default class Navbar extends Component {
             isOpen:false
         }
     }
-    static contextType = productContext  
-    
+    static contextType = productContext
+
     toggleMenu = (e) =>{
         e.stopPropagation()
         this.setState({
@@ -37,7 +37,7 @@ export default class Navbar extends Component {
         const nav = document.querySelector('nav')
         nav.style.paddingTop = '75vh'
     }
-    
+
     componentDidMount(){
         const overlay = document.querySelector('.overlay-navbar')
         overlay.addEventListener('click', ()=>{
@@ -47,7 +47,7 @@ export default class Navbar extends Component {
         })
         const navbar = document.querySelector('.navbar')
         window.addEventListener('scroll', (e)=>{
-            
+
             if(window.scrollY>60){
                 navbar.classList.add('navbar-bg')
             }
@@ -67,7 +67,7 @@ export default class Navbar extends Component {
         //add active class to the clicked btn
         mynode.classList.add('active')
         let target = mynode.dataset.click
-        
+
         let menuBox = document.querySelector('.menu-container')
         let loginBox = document.querySelector('.login-containers')
         if(target === 'menu'){
@@ -84,12 +84,12 @@ export default class Navbar extends Component {
         base.classList.remove('hidden')
         ReactDOM.render(<Login/>, base);
     }
-    
+
     render() {
         var allBtns = document.querySelectorAll('.btn-top-menu-open')
         allBtns.forEach(item => item.addEventListener('click',(e)=> this.controlMenu(e),false))
         let {cartCount,fullheightpage} = this.context
-        
+
         return (
             <div className={fullheightpage ? 'hidden': ''}>
             <div className="login-overlay hidden">
@@ -109,7 +109,7 @@ export default class Navbar extends Component {
                         <button className="icon-btn menu-right-user-icon" onClick={this.openLoginOverlay}><AiOutlineUser/></button>
                         <button className="icon-btn menu-right-heart-icon"><Link to="/wishlist"><AiOutlineHeart/></Link></button>
                         <button className="icon-btn menu-right-cart-icon"><Link to="/cart"><AiOutlineShopping/></Link>
-                        <span className="cart-count-navbar">{cartCount}</span>                        
+                        <span className="cart-count-navbar">{cartCount}</span>
                         </button>
                     </div>
                     <div className={this.state.isOpen ? 'submenu-container submenu-open' : 'submenu-container '}>
@@ -133,10 +133,9 @@ export default class Navbar extends Component {
                         </ul>
                     </div>
                 </div>
-                
+
             </nav>
             </div>
         )
     }
 }
-

@@ -1,3 +1,38 @@
+# Ecommerce-Jewelry-Store-REACT
+Ecommerce Jewelry Store Template Which is bootstrapped with Create React App.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Demo](#demo)
+
+## General info
+```
+This is an ecommerce jewelry store website Template, data is hosted by Netlify.
+The cart stores in Browser's Local Storage.
+Which I made it to improve my skills in using Context in React.
+```
+	
+## Technologies
+Project is created with:
+* HTML5 / CSS3
+* JavaScript
+* React
+* Netlify
+	
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../Ecommerce-Jewelry-Store-REACT
+$ npm install
+$ npm start
+```
+
+## Demo
+http://template2.ml/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
