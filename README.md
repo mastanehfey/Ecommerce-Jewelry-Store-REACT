@@ -8,7 +8,7 @@ Ecommerce Jewelry Store Template Which is bootstrapped with Create React App.
 
 ## General info
 ```
-This is an ecommerce jewelry store website Template, data is hosted by Netlify.
+This is an ecommerce jewelry store website Template, data is hosted by Contentful.
 The cart stores in Browser's Local Storage.
 Which I made it to improve my skills in using Context in React.
 ```
@@ -18,7 +18,8 @@ Project is created with:
 * HTML5 / CSS3
 * JavaScript
 * React
-* Netlify
+* Contentful
+* Styled Component
 	
 ## Setup
 To run this project, install it locally using npm:
